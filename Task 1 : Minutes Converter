@@ -1,0 +1,32 @@
+
+package Codes;
+
+import java.util.Scanner;
+
+public class MinConv {
+
+   
+
+    public static void main(String[] args){
+     
+        Scanner sc= new Scanner(System.in);
+        System.out.println("======================");
+        System.out.println("  Minutes Converter");
+        System.out.println("======================");
+        
+        System.out.println("How Many Minutes?");
+        int m=sc.nextInt();
+        
+        int y=m/525600;
+        int x=m%525600;
+        int d=x/1140;
+        System.out.println("---------------------------------------------");
+        System.out.println(m+" Minutes Makes "+y+ "Years & "+d+" Days");
+        System.out.println("---------------------------------------------");
+        
+        
+    }
+    
+
+    
+}
