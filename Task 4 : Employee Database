@@ -1,0 +1,81 @@
+
+package Codes;
+
+import java.util.*;
+
+public class Employee {
+    String name,yoj,add;
+    long sal;
+    void GetDetails(){
+        
+        System.out.println("====================================");
+        
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Employee Name : ");
+        name=sc.nextLine();
+        
+        System.out.println("Year Of Join(YYYY) : ");
+        yoj=sc.nextLine();
+        
+        System.out.println("Salary : ");
+        sal=sc.nextLong();
+        
+        
+        
+        System.out.println("Address : ");
+        add=sc.next();
+        
+        System.out.println("====================================");
+        
+        
+        
+    }
+    void ShowDetails(){
+        
+        System.out.println("-------------------------------");
+        
+        
+        System.out.println("Employee Name : " + name);
+        
+        System.out.println("Year Of Join : "+yoj);
+       
+        System.out.println("Salary : "+sal);
+        
+        System.out.println("Address : "+add);
+        
+        System.out.println("-------------------------------");
+        
+    
+}
+    
+    public static void main(String[]args){
+        
+        
+        System.out.println("====================================");
+        System.out.println("       Employee DataBase");
+        System.out.println("====================================");
+        
+        Employee em[]=new Employee[100];
+        
+        Scanner emp=new Scanner(System.in);
+        
+        System.out.println("How Many Employess Are You Entering?");
+        int x=emp.nextInt();
+       
+        for (int i=0;i<x;i++){
+        
+            em[i]=new Employee();
+                em[i].GetDetails();
+       
+                }
+       
+        
+        for (int i=0;i<x;i++){
+        
+            em[i].ShowDetails();
+       
+                }
+       
+    }
+    
+}
