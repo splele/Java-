@@ -1,0 +1,49 @@
+package Codes;
+
+import java.util.*;
+
+public class Prime {
+
+	
+	void prime(int x) 
+	{
+	
+	int r=1,i=2;
+		while(r!=0 && i<x) {
+		
+			r=x%i;
+			i++;
+		}
+		System.out.println("---------------------------------------------");
+	
+	if (r == 0)
+			System.out.println("Entered Number Is Not A Prime Number!");
+	else
+		System.out.println("Entered Number Is A Prime Number!");
+		
+		System.out.println("---------------------------------------------");
+	
+	}
+	
+	public static void main(String[] args) 
+	{
+		
+		System.out.println("=================================");
+		System.out.println("    PRIME NUMBER IDENTIFIER      ");
+		System.out.println("=================================");
+		
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.println("Enter The Number : ");
+		int x = sc.nextInt();
+		
+		Prime p=new Prime();
+		p.prime(x);
+		
+		
+		
+	}
+	
+}
+
+
